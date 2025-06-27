@@ -9,6 +9,8 @@ import portfolioCard02 from "../assets/images/portfolio-card-02.png";
 import portfolioCard03 from "../assets/images/portfolio-card-03.png";
 import portfolioCard04 from "../assets/images/portfolio-card-04.png";
 import portfolioCard05 from "../assets/images/portfolio-card-05.png";
+import TestimonialsSlider from "../components/common/TestimonialsSlider.jsx";   
+import logo from "../assets/images/logo.png";
 import lightLg from "../assets/images/light-lg.png";
 import hwwIcon01 from "../assets/images/hww-icon-01.svg";
 import hwwIcon02 from "../assets/images/hww-icon-02.svg";
@@ -16,11 +18,21 @@ import hwwIcon03 from "../assets/images/hww-icon-03.svg";
 import hwwIcon04 from "../assets/images/hww-icon-04.svg";
 import BrandSlider from "../components/BrandSlider.jsx";
 import Accordion from "../components/Accordion.jsx";
+import TestimonialsSliderRtl from "../components/TestimonialsSliderRtl.jsx";
 ---
 
 <Layout>
   <main class="main-content">
     <section class="hero-banner">
+      <video
+        src="/src/assets/videos/smoke.mp4"
+        class="header-video"
+        autoplay
+        loop
+        muted
+        playsinline
+      >
+      </video>
       <div class="container">
         <div
           class="hero-banner-content text-center flex flex-col justify-center items-center relative z-[3] pt-[350px]"
@@ -42,10 +54,13 @@ import Accordion from "../components/Accordion.jsx";
         </div>
       </div>
     </section>
-    <section class="our-services-secpt-[100px] pb-[100px]">
+    <section class="our-services-secpt-[100px] relative z-[2] pb-[100px]">
       <div class="container">
         <div class="our-services-content">
-          <h3 class="tag mb-[20px] max-w-[210px]">Our Services</h3>
+          <div class="effect-wrapper relative max-w-[210px]">
+            <h3 class="tag mb-[20px] ">Our Services</h3>
+            <img src="/src/assets/images/light-sm.png" alt="our-services-effect" class="effect-img top-[-53px]">
+          </div>
           <h2 class="hd-lg max-w-[720px] mb-[40px]">
             Everything You Need to Thrive Online
           </h2>
@@ -188,10 +203,13 @@ import Accordion from "../components/Accordion.jsx";
     <section class="about-us-sec pb-[100px]">
       <div class="container">
         <div class="about-us-sec-card">
-          <h2 class="tag text-center mb-[30px]">About Us</h2>
+          <div class="effect-wrapper relative max-w-[210px]">
+            <h2 class="tag text-center mb-[30px]">About Us</h2>
+            <img src="/src/assets/images/light-sm.png" alt="our-services-effect" class="effect-img top-[-47px]">
+          </div>
           <h3 class="hd-lg leading-[1.1] max-w-[1160px] text-center">
-            We’re More Than Designers — <span class="text-[#4B4B4B]">
-              We’re Your Digital Growth Partner
+            We're More Than Designers — <span class="text-[#4B4B4B]">
+              We're Your Digital Growth Partner
             </span>
           </h3>
         </div>
@@ -200,7 +218,10 @@ import Accordion from "../components/Accordion.jsx";
     <section class="our-work-sec pb-[100px]">
       <div class="container">
         <div class="our-work-content">
-          <h2 class="tag max-w-[210px] text-center mb-[40px]">Portfolio</h2>
+          <div class="effect-wrapper relative max-w-[210px]">
+            <h2 class="tag max-w-[210px] text-center mb-[40px]">Portfolio</h2>
+            <img src="/src/assets/images/light-sm.png" alt="our-services-effect" class="effect-img top-[-55px]">
+          </div>
           <div class="flex items-end justify-between mb-[40px]">
             <h3 class="hd-lg leading-[1.1] max-w-[700px]">
               Websites That Speak Louder Than Words
@@ -323,10 +344,28 @@ import Accordion from "../components/Accordion.jsx";
         </div>
       </div>
     </section>
+    <section class="testimonials-sec pb-[100px] relative">
+      <div class="container">
+        <div class="testimonials-content flex flex-col items-center justify-center mb-[70px]">
+          <div class="effect-wrapper relative max-w-[210px]">
+            <h2 class="tag text-center mb-[30px]">Testimonials</h2>
+            <img src="/src/assets/images/light-sm.png" alt="our-services-effect" class="effect-img top-[-54px]">
+          </div>
+          <h3 class="hd-lg leading-[1.1] max-w-[1160px] text-center">
+            What Our Clients Say
+          </h3>
+        </div>
+        <TestimonialsSlider client:load />
+        <TestimonialsSliderRtl client:load />
+      </div>
+    </section>
     <section class="how-we-work pb-[100px]">
       <div class="container">
         <div class="flex flex-col items-center justify-center mb-[70px]">
-          <h2 class="tag max-w-[220px] text-center mb-[40px]">How We Work</h2>
+          <div class="effect-wrapper relative max-w-[250px]">
+            <h2 class="tag max-w-[220px] text-center mb-[40px]">How We Work</h2>
+            <img src="/src/assets/images/light-sm.png" alt="our-services-effect" class="effect-img top-[-54px]">
+          </div>
           <h3 class="hd-lg leading-[1.1]">Our Proven 4-Step Process</h3>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
@@ -405,15 +444,28 @@ import Accordion from "../components/Accordion.jsx";
         </div>
       </div>
     </section>
-    <section class="contact-sec">
-      <div class="container">
+    <section class="contact-sec relative z-[2]">
+      <!-- add smoke video in this section -->
+      <video
+        src="/src/assets/videos/smoke.mp4"
+        class="contact-video"
+        autoplay
+        loop
+        muted
+        playsinline
+      >
+      </video>
+      <div class="container relative z-[2]">
         <div class="flex flex-col items-center justify-center mb-[70px]">
-          <h2 class="tag max-w-[220px] text-center mb-[30px]">Contact</h2>
+          <div class="effect-wrapper relative max-w-[250px]">
+            <h2 class="tag max-w-[220px] text-center mb-[30px]">Contact</h2>
+            <img src="/src/assets/images/light-sm.png" alt="our-services-effect" class="effect-img top-[-54px]">
+          </div>
           <h3 class="hd-lg leading-[1.1] mb-[30px]">
             Ready to Build Something Amazing?
           </h3>
           <p class="text-white text-[20px] text-center">
-            Let’s talk about your project or idea — we’re here to help.
+            Let's talk about your project or idea — we're here to help.
           </p>
         </div>
         <form action="">
@@ -454,25 +506,37 @@ import Accordion from "../components/Accordion.jsx";
             </div>
             <div class="field-wrapper col-span-2">
               <textarea
-                class="input-field text-area"
+                class="input-field text-area resize-none min-h-[150px]"
                 name="msg"
                 placeholder="Message"></textarea>
+            </div>
+            <div class="col-span-2">
+              <Button
+                label="Submit"
+                type="submit"
+                className="text-black flex mx-auto text-[20px] font-bold py-[17px] px-[57px] rounded-[60px] border border-[#565656] bg-white"
+              />
             </div>
           </div>
         </form>
       </div>
     </section>
-    <section class="faq-sec">
+    <section class="faq-sec pt-[100px]">
       <div class="container">
         <div class="flex flex-col items-center justify-center mb-[70px]">
-          <h2 class="tag max-w-[220px] text-center mb-[30px]">FAQ'S</h2>
+          <div class="effect-wrapper relative max-w-[250px]">
+            <h2 class="tag max-w-[220px] text-center mb-[30px]">FAQ'S</h2>
+            <img src="/src/assets/images/light-sm.png" alt="our-services-effect" class="effect-img top-[-54px]">
+          </div>
           <h3 class="hd-lg leading-[1.1] mb-[30px] text-center max-w-[700px]">
             Frequently Asked Questions
           </h3>
           <Accordion client:load />
         </div>
-        <div class="light-lg-wrapper mx-auto flex justify-center items-center border-b border-[#565656]">
-          <Image src={lightLg} alt="light-lg" />
+        <div
+          class="light-lg-wrapper mx-auto flex justify-center items-center border-b border-[#565656]"
+        >
+          <Image src={lightLg} alt="light-lg" layout="constrained" />
         </div>
       </div>
     </section>

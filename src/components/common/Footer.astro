@@ -1,1 +1,93 @@
-<footer><h1>footer component</h1></header>
+---
+import { Image } from "astro:assets";
+import logo from "../../assets/images/logo.png";
+import Button from "../ui/Button.astro";
+---
+<footer class="footer-sec pt-[100px] pb-[50px]">
+    <div class="container">
+      <div class="grid grid-cols-1 lg:grid-cols-4 pb-[150px]">
+        <div class="footer-logo-wrapper">
+          <Image
+            src={logo}
+            alt="logo"
+            layout="constrained"
+            class="mb-[20px]"
+          />
+          <p class="text-[#666666] text-[20px] mb-[30px]">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+            erat volutpat. Ut wisi enim
+          </p>
+          <ul class="social-icons">
+            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-links-wrapper mx-auto">
+          <h4 class="text-white text-[25px] font-medium mb-[20px]">
+            Quick Links
+          </h4>
+          <ul class="footer-links">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Testimonials</a></li>
+            <li><a href="">How It Works</a></li>
+          </ul>
+        </div>
+        <div class="contact-info-wrapper">
+          <h4 class="text-white text-[25px] font-medium mb-[20px]">
+            Contact
+          </h4>
+          <ul>
+            <li>
+              <a href="tel:3109755211"
+                ><span><i class="fa-solid fa-phone"></i></span>(310) 975-5211</a
+              >
+            </li>
+            <li class="flex flex-col">
+              <a href="mailto:support@libertywebstudio.com"
+                ><span><i class="fa-solid fa-envelope"></i></span
+                >support@libertywebstudio.com</a
+              >
+              <a href="mailto:adam@libertywebstudio.com"
+                ><span><i class="fa-solid fa-envelope"></i></span
+                >adam@libertywebstudio.com</a
+              >
+            </li>
+            <li class="flex flex-col">
+              <a class="mb-[10px] flex" href=""
+                ><span><i class="fa-solid fa-location-dot"></i></span>REGIONAL
+                OFFICE: Laurel Canyon Blvd, Studio City, CA 91604</a
+              >
+              <a class="flex" href=""
+                ><span><i class="fa-solid fa-location-dot"></i></span>REGIONAL
+                OFFICE: W Broadway Vancouver, BC V5Z4C2 CANADA</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-form">
+          <h4 class="text-white text-[25px] font-medium mb-[20px]">
+            Subscribe Form
+          </h4>
+          <div class="filed-wrapper relative">
+            <input
+              type="email"
+              placeholder="Email"
+              class="input-field footer-input"
+            />
+            <Button
+              label="Subscribe Us"
+              className="absolute top-[50%] right-[10px] translate-y-[-50%] py-[9px] px-[32px] text-[20px] rounded-[60px] border border-[#FFBD53] bg-[#FF712B] text-white mb-[80px]"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-[#565656] mb-[30px]"></div>
+      <p class="text-[#666666] text-[20px] text-center pt-[30px]">
+        ©2025 Liberty Web Studio, All rights reserved.
+      </p>
+    </div>
+  </footer>

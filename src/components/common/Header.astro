@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 import logo from "../../assets/images/logo.png";
 import Button from "../ui/Button.astro";
 ---
@@ -22,10 +22,21 @@ import Button from "../ui/Button.astro";
             </nav>
             <div>
                 <Button
-                    className="bg-[#565656] py-[17px] px-[38px] text-white border border-[#fff]"
+                    className="bg-[#2C2C2C] py-[17px] px-[38px] text-white border border-[#565656]"
                     label="Let’s Talk"
                 />
             </div>
         </div>
     </div>
 </header>
+
+<script>
+    let navs = document.querySelector(".primary-nav");
+    let menuIcon = document.querySelectorAll(".menu-toggle");
+    console.log(navs, menuIcon);
+    menuIcon.forEach(function (e) {
+        e.addEventListener("click", function () {
+            navs.classList.toggle("active");
+        });
+    });
+</script>
