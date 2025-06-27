@@ -1,13 +1,14 @@
 ---
+import { Image } from 'astro:assets';
 import logo from "../../assets/images/logo.png";
 import Button from "../ui/Button.astro";
 ---
 
-<header class="header absolute top-0 left-0 right-0 w-full z-1 bg-[#000]">
+<header class="header absolute top-0 left-0 right-0 w-full z-[4]">
     <div class="container">
         <div class="flex justify-between items-center">
             <div class="logo">
-                <img src={logo.src} alt="logo" />
+                <Image src={logo} alt="logo" />
             </div>
             <nav class="flex-1 max-w-[530px]">
                 <ul class="flex primary-nav justify-between items-center">

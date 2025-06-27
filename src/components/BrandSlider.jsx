@@ -1,33 +1,30 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
-import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import { Navigation, Pagination } from 'swiper/modules';
 
 const BrandSlider = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    cssEase: 'linear',
-  };
-
   return (
-    <div>
-        <Slider {...settings}>
-        <div>
-          <img src="/path/to/image1.jpg" />
-        </div>
-        <div>
-          <img src="/path/to/image2.jpg" />
-        </div>
-        <div>
-          <img src="/path/to/image3.jpg" />
-        </div>
-        {/* Add more slides as needed */}
-      </Slider>
-    </div>
+    <Swiper
+      modules={[Navigation, Pagination]}
+      spaceBetween={30}
+      slidesPerView={1}
+      navigation
+      pagination={{ clickable: true }}
+      loop={true}
+    >
+      <SwiperSlide>
+        <div className="bg-blue-500 text-white text-center p-10 rounded-lg">Slide 1</div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="bg-green-500 text-white text-center p-10 rounded-lg">Slide 2</div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="bg-red-500 text-white text-center p-10 rounded-lg">Slide 3</div>
+      </SwiperSlide>
+    </Swiper>
   );
 };
 

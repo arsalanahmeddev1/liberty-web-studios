@@ -19,7 +19,7 @@ body {
 /* global css end */
 /* hero-banner */
 .hero-banner {
-    @apply bg-[#000] text-white;
+    @apply bg-[#000] text-white overflow-hidden relative pt-[100px];
 }
 
 .primary-nav li a {
@@ -84,7 +84,7 @@ body {
     @apply opacity-100;
 }
 .about-us-sec-card {
-    @apply rounded-[30px] py-[200px] px-[100px] text-center flex flex-col justify-center items-center;
+    @apply rounded-[30px] py-[120px] px-[100px] text-center flex flex-col justify-center items-center;
     background: radial-gradient(193.16% 193.16% at 50% -85.91%, rgb(255 113 43 / 56%) 0%, rgb(254 113 42 / 7%) 65%);
 }
 .portfolio-card {
@@ -92,7 +92,7 @@ body {
 }
 .portfolio-card::before {
     content: "";
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 44.71%, #000000 90.38%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 44.71%, #0000009c 90.38%);
     position: absolute;
     top: 0;
     left: 0;
@@ -107,6 +107,8 @@ body {
 .portfolio-card:hover .portfolio-card-content {
     @apply opacity-100 bottom-[30px];
 }
+:where([data-astro-image]) { object-fit: var(--fit); object-position: var(--pos); }
+:where([data-astro-image='constrained']) { max-width: 100%; }
 /* responsive */
 @media (min-width: 1700px) {
     .container {
