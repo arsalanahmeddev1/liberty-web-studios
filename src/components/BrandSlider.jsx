@@ -2,27 +2,64 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
 import { Navigation, Pagination } from 'swiper/modules';
 
 const BrandSlider = () => {
   return (
     <Swiper
-      modules={[Navigation, Pagination]}
-      spaceBetween={30}
-      slidesPerView={1}
-      navigation
-      pagination={{ clickable: true }}
+      // modules={[Navigation, Pagination]}
+      spaceBetween={0}
+      slidesPerView={5}
+      autoplay={{
+        delay: 0,
+        disableOnInteraction: false,
+      }}
+      speed={1000}
       loop={true}
+      pagination={{ clickable: true }}
+      slidesPerGroup={1}
     >
       <SwiperSlide>
-        <div className="bg-blue-500 text-white text-center p-10 rounded-lg">Slide 1</div>
+        <div className="">
+          <img
+            src="/src/assets/images/brand-01.png"
+            alt="Brand Slider" />
+        </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="bg-green-500 text-white text-center p-10 rounded-lg">Slide 2</div>
+      <div className="">
+          <img
+            src="/src/assets/images/brand-01.png"
+            alt="Brand Slider" />
+        </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="bg-red-500 text-white text-center p-10 rounded-lg">Slide 3</div>
+      <div className="">
+          <img
+            src="/src/assets/images/brand-01.png"
+            alt="Brand Slider" />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+      <div className="">
+          <img
+            src="/src/assets/images/brand-01.png"
+            alt="Brand Slider" />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+      <div className="">
+          <img
+            src="/src/assets/images/brand-01.png"
+            alt="Brand Slider" />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+      <div className="">
+          <img
+            src="/src/assets/images/brand-01.png"
+            alt="Brand Slider" />
+        </div>
       </SwiperSlide>
     </Swiper>
   );
