@@ -1,11 +1,312 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Welcome from "../components/Welcome.astro";
+import Layout from "../layouts/Layout.astro";
+import "../assets/css/style.css";
+import bannerImage from "../assets/images/hero-banner-image.png";
+import Button from "../components/ui/Button.astro";
+import servicesCard01 from "../assets/images/services-card-01.png";
+import portfolioCard01 from "../assets/images/portfolio-card-01.png";
+import portfolioCard02 from "../assets/images/portfolio-card-02.png";
+import portfolioCard03 from "../assets/images/portfolio-card-03.png";
+import portfolioCard04 from "../assets/images/portfolio-card-04.png";
+import portfolioCard05 from "../assets/images/portfolio-card-05.png";
+// import BrandSlider from "../components/BrandSlider.jsx";
 ---
 
 <Layout>
-	<Welcome />
+	<main class="main-content">
+		<section class="hero-banner overflow-hidden relative">
+			<div class="container">
+				<div
+					class="hero-banner-content h-screen text-center flex flex-col justify-center items-center relative z-[3] pt-[350px]"
+				>
+					<h1 class="hd-lg max-w-[850px] mb-[20px]">
+						Beautiful. Strategic Results-Driven Websites
+					</h1>
+					<p
+						class="text-[#737373] text-[20px] max-w-[500px] mb-[30px]"
+					>
+						We craft high-performing websites that grow your
+						business and elevate your brand online.
+					</p>
+					<Button
+						label="View Our Work"
+						className="py-[17px] px-[42px] text-[20px] rounded-[60px] border border-[#FFBD53] bg-[#FF712B]"
+					/>
+					<div class="brands-slider">
+						<!-- <BrandSlider /> -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="our-services-secpt-[100px] pb-[100px]">
+			<div class="container">
+				<div class="our-services-content">
+					<h3 class="tag mb-[20px]">Our Services</h3>
+					<h2 class="hd-lg max-w-[720px] mb-[40px]">
+						Everything You Need to Thrive Online
+					</h2>
+
+					<div class="our-services-sec-area">
+						<div class="services-item">
+							<div>
+								<h3
+									class="hd-md leading-[1.1] max-w-[316px] min-w-[316px]"
+								>
+									Website Design & Development
+								</h3>
+							</div>
+							<div>
+								<h5 class="hd-sm leading-[1.1] max-w-[211px]">
+									Websites That Work — Beautifully
+								</h5>
+							</div>
+							<div>
+								<img
+									src={servicesCard01.src}
+									class="services-card-img"
+									alt="services-card-01"
+								/>
+							</div>
+							<div>
+								<Button
+									label="Explore Our Services"
+									className="text-white text-[20px] font-bold py-[17px] px-[42px] rounded-[60px] border border-[#565656] bg-[#2C2C2C]"
+								/>
+							</div>
+						</div>
+						<div class="services-item">
+							<div>
+								<h3
+									class="hd-md leading-[1.1] max-w-[316px] min-w-[316px]"
+								>
+									Branding & Identity
+								</h3>
+							</div>
+							<div>
+								<h5 class="hd-sm leading-[1.1] max-w-[211px]">
+									Build a Brand That Stands Out
+								</h5>
+							</div>
+							<div>
+								<img
+									src={servicesCard01.src}
+									class="services-card-img"
+									alt="services-card-01"
+								/>
+							</div>
+							<div>
+								<Button
+									label="Explore Our Services"
+									className="text-white text-[20px] font-bold py-[17px] px-[42px] rounded-[60px] border border-[#565656] bg-[#2C2C2C]"
+								/>
+							</div>
+						</div>
+						<div class="services-item">
+							<div>
+								<h3
+									class="hd-md leading-[1.1] max-w-[316px] min-w-[316px]"
+								>
+									Mobile App Development
+								</h3>
+							</div>
+							<div>
+								<h5 class="hd-sm leading-[1.1] max-w-[211px]">
+									Intuitive Apps That Engage and Perform
+								</h5>
+							</div>
+							<div>
+								<img
+									src={servicesCard01.src}
+									class="services-card-img"
+									alt="services-card-01"
+								/>
+							</div>
+							<div>
+								<Button
+									label="Explore Our Services"
+									className="text-white text-[20px] font-bold py-[17px] px-[42px] rounded-[60px] border border-[#565656] bg-[#2C2C2C]"
+								/>
+							</div>
+						</div>
+						<div class="services-item">
+							<div>
+								<h3
+									class="hd-md leading-[1.1] max-w-[316px] min-w-[316px]"
+								>
+									Animation
+								</h3>
+							</div>
+							<div>
+								<h5 class="hd-sm leading-[1.1] max-w-[211px]">
+									Bring Your Ideas to Life with Animation
+								</h5>
+							</div>
+							<div>
+								<img
+									src={servicesCard01.src}
+									class="services-card-img"
+									alt="services-card-01"
+								/>
+							</div>
+							<div>
+								<Button
+									label="Explore Our Services"
+									className="text-white text-[20px] font-bold py-[17px] px-[42px] rounded-[60px] border border-[#565656] bg-[#2C2C2C]"
+								/>
+							</div>
+						</div>
+						<div class="services-item">
+							<div>
+								<h3
+									class="hd-md leading-[1.1] max-w-[316px] min-w-[316px]"
+								>
+									Digital Marketing
+								</h3>
+							</div>
+							<div>
+								<h5 class="hd-sm leading-[1.1] max-w-[211px]">
+									Get Seen. Get Clicked. Get Results.
+								</h5>
+							</div>
+							<div>
+								<img
+									src={servicesCard01.src}
+									class="services-card-img"
+									alt="services-card-01"
+								/>
+							</div>
+							<div>
+								<Button
+									label="Explore Our Services"
+									className="text-white text-[20px] font-bold py-[17px] px-[42px] rounded-[60px] border border-[#565656] bg-[#2C2C2C]"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about-us-sec pb-[100px]">
+			<div class="container">
+				<div class="about-us-sec-card">
+					<h2 class="tag text-center">About Us</h2>
+					<h3 class="hd-lg leading-[1.1] max-w-[1160px] text-center">
+						We’re More Than Designers — <span class="text-[#4B4B4B]"
+							>We’re Your Digital Growth Partner</span
+						>
+					</h3>
+				</div>
+			</div>
+		</section>
+		<section class="our-work-sec pb-[100px]">
+			<div class="container">
+				<div class="our-work-content">
+					<h2 class="tag max-w-[720px] text-center mb-[40px]">
+						Portfolio
+					</h2>
+					<div class="flex items-end justify-between mb-[40px]">
+						<h3 class="hd-lg leading-[1.1] max-w-[700px]">
+							Websites That Speak Louder Than Words
+						</h3>
+						<p class="text-[#676767] text-[20px] max-w-[400px]">
+							Explore some of our favorite client projects, each
+							designed to solve real business problems and deliver
+							measurable results.
+						</p>
+					</div>
+					<div class="grid grid-cols-2 gap-x-[20px] gap-y-[40px]">
+						<div>
+							<div class="portfolio-card">
+								<div class="portfolio-card-img">
+									<img
+										src={portfolioCard01.src}
+										alt="portfolio-card-01"
+									/>
+								</div>
+								<div class="portfolio-card-content">
+									<h4 class="hd-md">Websites</h4>
+									<p class="text-white text-[20px] max-w-[300px]">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="portfolio-card">
+								<div class="portfolio-card-img">
+									<img
+										src={portfolioCard02.src}
+										alt="portfolio-card-01"
+									/>
+								</div>
+								<div class="portfolio-card-content">
+									<h4 class="hd-md">Branding</h4>
+									<p class="text-white text-[20px] max-w-[300px]">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="portfolio-card">
+								<div class="portfolio-card-img">
+									<img
+										src={portfolioCard03.src}
+										alt="portfolio-card-01"
+									/>
+								</div>
+								<div class="portfolio-card-content">
+									<h4 class="hd-md">Mobile App Development</h4>
+									<p class="text-white text-[20px] max-w-[300px]">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="portfolio-card">
+								<div class="portfolio-card-img">
+									<img
+										src={portfolioCard04.src}
+										alt="portfolio-card-01"
+									/>
+								</div>
+								<div class="portfolio-card-content">
+									<h4 class="hd-md">Animation</h4>
+									<p class="text-white text-[20px] max-w-[300px]">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="portfolio-card">
+								<div class="portfolio-card-img">
+									<img
+										src={portfolioCard05.src}
+										alt="portfolio-card-01"
+									/>
+								</div>
+								<div class="portfolio-card-content">
+									<h4 class="hd-md">Marketing</h4>
+									<p class="text-white text-[20px] max-w-[300px]">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="bg-[#121212] flex justify-center flex-col items-center h-full rounded-[20px]">
+								<div class="arrow-btn-wrapper w-[100px] h-[100px] rounded-[50%] mb-[20px] bg-[#2C2C2C] flex justify-center items-center">
+									<span class="arrow-btn rotate-[-37deg] text-[30px] text-white"><i class="fa-solid fa-arrow-right"></i></span>
+								</div>
+								<h4 class="text-white text-[50px] font-bold">View All Portfolio</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
 </Layout>

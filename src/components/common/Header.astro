@@ -1,0 +1,30 @@
+---
+import logo from "../../assets/images/logo.png";
+import Button from "../ui/Button.astro";
+---
+
+<header class="header absolute top-0 left-0 right-0 w-full z-1 bg-[#000]">
+    <div class="container">
+        <div class="flex justify-between items-center">
+            <div class="logo">
+                <img src={logo.src} alt="logo" />
+            </div>
+            <nav class="flex-1 max-w-[530px]">
+                <ul class="flex primary-nav justify-between items-center">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div>
+                <Button
+                    className="bg-[#565656] py-[17px] px-[38px] text-white border border-[#fff]"
+                    label="Let’s Talk"
+                />
+            </div>
+        </div>
+    </div>
+</header>

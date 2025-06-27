@@ -1,0 +1,12 @@
+---
+// Button.astro
+const { label, type = 'button', onClick, className = '' } = Astro.props;
+---
+
+<button 
+  type={type} 
+  onClick={onClick} 
+  class={`rounded-[60px] ${className}`}
+>
+  {label}
+</button>
