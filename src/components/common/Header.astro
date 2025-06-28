@@ -4,7 +4,7 @@ import logo from "../../assets/images/logo.png";
 import Button from "../ui/Button.astro";
 ---
 
-<header class="header absolute top-0 left-0 right-0 w-full z-[4]">
+<header class="header absolute top-0 pt-[30px] left-0 right-0 w-full z-[4]">
     <div class="container">
         <div class="flex justify-between items-center">
             <div class="logo">
@@ -12,6 +12,9 @@ import Button from "../ui/Button.astro";
             </div>
             <nav class="flex-1 max-w-[530px]">
                 <ul class="flex primary-nav justify-between items-center">
+                    <div class="close-icon">
+                        <i class="fa-solid fa-xmark menu-toggle"></i>
+                    </div>
                     <li><a href="/">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
@@ -25,6 +28,9 @@ import Button from "../ui/Button.astro";
                     className="bg-[#2C2C2C] py-[17px] px-[38px] text-white border border-[#565656]"
                     label="Let’s Talk"
                 />
+            </div>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars menu-toggle"></i>
             </div>
         </div>
     </div>

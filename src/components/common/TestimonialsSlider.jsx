@@ -8,30 +8,29 @@ const TestimonialsSlider = () => {
   return (
     <Swiper
       modules={[Navigation, Pagination, Autoplay]}
+    //   false the autoplay 
     //   add direction horizontal
       spaceBetween={20}  // Space between slides
       slidesPerView={3}  // Show 3 slides (1 full + half slides on both sides)
       centeredSlides={true} // Center the active slide
       autoplay={{
-        delay: 0,
+        delay: 4000,
         disableOnInteraction: false,
       }}
-      speed={4000}
+      speed={2000}
       loop={true} // Enable infinite looping
       slidesPerGroup={1}
       
       className="testimonials-swiper"
       loopAdditionalSlides={1} // Add extra slides for smoother looping
       breakpoints={{
-        640: {
+        0: {
           slidesPerView: 1, // 1 slide for small screens
-          spaceBetween: 10,
-          centeredSlides: true,
+          spaceBetween: 0,
+          centeredSlides: false,
         },
         768: {
           slidesPerView: 2, // 2 slides for medium screens
-          spaceBetween: 20,
-          centeredSlides: true,
         },
         1024: {
           slidesPerView: 3, // 3 slides for large screens
@@ -42,186 +41,96 @@ const TestimonialsSlider = () => {
     >
       <SwiperSlide>
         <div className="testimonials-card">
-          <div className="flex items-center justify-between mb-[20px]">
-            <div className="flex items-center gap-[30px]">
-              <div className="testimonials-card-img">
-                <img src="/src/assets/images/profile-01.png" alt="profile-01" />
-              </div>
-              <div>
-                <h4 className="text-white text-[28px] font-bold text-right">Sophia L.</h4> {/* Text aligned to the right */}
-              </div>
-            </div>
-            <div>
-              <ul className="star-rating">
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-              </ul>
-            </div>
+          <div className="video-wrapper">
+            <video src="/src/assets/videos/test-01.mp4" controls playsInline />
           </div>
-          <p className="text-[#666666] text-[25px] text-right"> {/* Text aligned to the right */}
+          <h4 className='text-white  text-[35px] leading-[1.1] mb-[20px] font-bold'>
+          Custom Web Portal Success
+          </h4>
+          <p className="text-[#666666] text-[20px]"> {/* Text aligned to the right */}
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim
           </p>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="testimonials-card">
-          <div className="flex items-center justify-between mb-[20px]">
-            <div className="flex items-center gap-[30px]">
-              <div className="testimonials-card-img">
-                <img src="/src/assets/images/profile-01.png" alt="profile-01" />
-              </div>
-              <div>
-                <h4 className="text-white text-[28px] font-bold text-right">Sophia L.</h4> {/* Text aligned to the right */}
-              </div>
-            </div>
-            <div>
-              <ul className="star-rating">
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-              </ul>
-            </div>
+          <div className="video-wrapper">
+            <video src="/src/assets/videos/test-02.mp4" controls playsInline />
           </div>
-          <p className="text-[#666666] text-[25px] text-right"> {/* Text aligned to the right */}
+          <h4 className='text-white  text-[35px] leading-[1.1] mb-[20px] font-bold'>
+          Custom Web Portal Success
+          </h4>
+          <p className="text-[#666666] text-[20px]"> {/* Text aligned to the right */}
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim
           </p>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="testimonials-card">
-          <div className="flex items-center justify-between mb-[20px]">
-            <div className="flex items-center gap-[30px]">
-              <div className="testimonials-card-img">
-                <img src="/src/assets/images/profile-01.png" alt="profile-01" />
-              </div>
-              <div>
-                <h4 className="text-white text-[28px] font-bold text-right">Sophia L.</h4> {/* Text aligned to the right */}
-              </div>
-            </div>
-            <div>
-              <ul className="star-rating">
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-              </ul>
-            </div>
+          <div className="video-wrapper">
+            <video src="/src/assets/videos/test-03.mp4" controls playsInline />
           </div>
-          <p className="text-[#666666] text-[25px] text-right"> {/* Text aligned to the right */}
+          <h4 className='text-white  text-[35px] leading-[1.1] mb-[20px] font-bold'>
+          Custom Web Portal Success
+          </h4>
+          <p className="text-[#666666] text-[20px]"> {/* Text aligned to the right */}
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim
           </p>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="testimonials-card">
-          <div className="flex items-center justify-between mb-[20px]">
-            <div className="flex items-center gap-[30px]">
-              <div className="testimonials-card-img">
-                <img src="/src/assets/images/profile-01.png" alt="profile-01" />
-              </div>
-              <div>
-                <h4 className="text-white text-[28px] font-bold text-right">Sophia L.</h4> {/* Text aligned to the right */}
-              </div>
-            </div>
-            <div>
-              <ul className="star-rating">
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-              </ul>
-            </div>
+          <div className="video-wrapper">
+            <video src="/src/assets/videos/test-04.mp4" controls playsInline />
           </div>
-          <p className="text-[#666666] text-[25px] text-right"> {/* Text aligned to the right */}
+          <h4 className='text-white  text-[35px] leading-[1.1] mb-[20px] font-bold'>
+          Custom Web Portal Success
+          </h4>
+          <p className="text-[#666666] text-[20px]"> {/* Text aligned to the right */}
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim
           </p>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="testimonials-card">
-          <div className="flex items-center justify-between mb-[20px]">
-            <div className="flex items-center gap-[30px]">
-              <div className="testimonials-card-img">
-                <img src="/src/assets/images/profile-01.png" alt="profile-01" />
-              </div>
-              <div>
-                <h4 className="text-white text-[28px] font-bold text-right">Sophia L.</h4> {/* Text aligned to the right */}
-              </div>
-            </div>
-            <div>
-              <ul className="star-rating">
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-              </ul>
-            </div>
+          <div className="video-wrapper">
+            <video src="/src/assets/videos/test-05.mp4" controls playsInline />
           </div>
-          <p className="text-[#666666] text-[25px] text-right"> {/* Text aligned to the right */}
+          <h4 className='text-white  text-[35px] leading-[1.1] mb-[20px] font-bold'>
+          Custom Web Portal Success
+          </h4>
+          <p className="text-[#666666] text-[20px]"> {/* Text aligned to the right */}
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim
           </p>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="testimonials-card">
-          <div className="flex items-center justify-between mb-[20px]">
-            <div className="flex items-center gap-[30px]">
-              <div className="testimonials-card-img">
-                <img src="/src/assets/images/profile-01.png" alt="profile-01" />
-              </div>
-              <div>
-                <h4 className="text-white text-[28px] font-bold text-right">Sophia L.</h4> {/* Text aligned to the right */}
-              </div>
-            </div>
-            <div>
-              <ul className="star-rating">
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-              </ul>
-            </div>
+          <div className="video-wrapper">
+            <video src="/src/assets/videos/test-06.mp4" controls playsInline />
           </div>
-          <p className="text-[#666666] text-[25px] text-right"> {/* Text aligned to the right */}
+          <h4 className='text-white  text-[35px] leading-[1.1] mb-[20px] font-bold'>
+          Custom Web Portal Success
+          </h4>
+          <p className="text-[#666666] text-[20px]"> {/* Text aligned to the right */}
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim
           </p>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="testimonials-card">
-          <div className="flex items-center justify-between mb-[20px]">
-            <div className="flex items-center gap-[30px]">
-              <div className="testimonials-card-img">
-                <img src="/src/assets/images/profile-01.png" alt="profile-01" />
-              </div>
-              <div>
-                <h4 className="text-white text-[28px] font-bold text-right">Sophia L.</h4> {/* Text aligned to the right */}
-              </div>
-            </div>
-            <div>
-              <ul className="star-rating">
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-                <li><i className="fa-solid fa-star"></i></li>
-              </ul>
-            </div>
+          <div className="video-wrapper">
+            <video src="/src/assets/videos/test-07.mp4" controls playsInline />
           </div>
-          <p className="text-[#666666] text-[25px] text-right"> {/* Text aligned to the right */}
+          <h4 className='text-white  text-[35px] leading-[1.1] mb-[20px] font-bold'>
+          Custom Web Portal Success
+          </h4>
+          <p className="text-[#666666] text-[20px]"> {/* Text aligned to the right */}
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim
           </p>
         </div>
       </SwiperSlide>
+      
       {/* Repeat SwiperSlide components here */}
     </Swiper>
   );

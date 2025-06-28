@@ -5,7 +5,7 @@ import Button from "../ui/Button.astro";
 ---
 <footer class="footer-sec pt-[100px] pb-[50px]">
     <div class="container">
-      <div class="grid grid-cols-1 lg:grid-cols-4 pb-[150px]">
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-y-[20px] lg:gap-y-0 pb-[50px] lg:pb-[150px]">
         <div class="footer-logo-wrapper">
           <Image
             src={logo}
@@ -25,7 +25,7 @@ import Button from "../ui/Button.astro";
             <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
           </ul>
         </div>
-        <div class="footer-links-wrapper mx-auto">
+        <div class="footer-links-wrapper lg:mx-auto">
           <h4 class="text-white text-[25px] font-medium mb-[20px]">
             Quick Links
           </h4>
@@ -72,7 +72,7 @@ import Button from "../ui/Button.astro";
           <h4 class="text-white text-[25px] font-medium mb-[20px]">
             Subscribe Form
           </h4>
-          <div class="filed-wrapper relative">
+          <div class="field-wrapper relative">
             <input
               type="email"
               placeholder="Email"
@@ -80,8 +80,9 @@ import Button from "../ui/Button.astro";
             />
             <Button
               label="Subscribe Us"
-              className="absolute top-[50%] right-[10px] translate-y-[-50%] py-[9px] px-[32px] text-[20px] rounded-[60px] border border-[#FFBD53] bg-[#FF712B] text-white mb-[80px]"
+              className="absolute top-[50%] right-[5px] translate-y-[-50%] py-[9px] px-[32px] text-[20px] rounded-[60px] border border-[#FFBD53] bg-[#FF712B] text-white mb-[80px]"
             />
+            <img src="/src/assets/images/light-sm.png" alt="light-sm" class="absolute top-0 left-[50px] translate-y-[-50%] w-[100px] h-[100px]">
           </div>
         </div>
       </div>

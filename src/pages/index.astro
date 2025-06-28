@@ -35,7 +35,7 @@ import TestimonialsSliderRtl from "../components/TestimonialsSliderRtl.jsx";
       </video>
       <div class="container">
         <div
-          class="hero-banner-content text-center flex flex-col justify-center items-center relative z-[3] pt-[350px]"
+          class="hero-banner-content text-center flex flex-col justify-center items-center relative z-[3]  pt-[100px] md:pt-[200px] lg:pt-[350px] "
         >
           <h1 class="hd-lg max-w-[850px] mb-[20px]">
             Beautiful. Strategic Results-Driven Websites
@@ -57,23 +57,23 @@ import TestimonialsSliderRtl from "../components/TestimonialsSliderRtl.jsx";
     <section class="our-services-secpt-[100px] relative z-[2] pb-[100px]">
       <div class="container">
         <div class="our-services-content">
-          <div class="effect-wrapper relative max-w-[210px]">
+          <div class="effect-wrapper relative max-w-[210px] mx-auto lg:mx-0">
             <h3 class="tag mb-[20px] ">Our Services</h3>
             <img src="/src/assets/images/light-sm.png" alt="our-services-effect" class="effect-img top-[-53px]">
           </div>
-          <h2 class="hd-lg max-w-[720px] mb-[40px]">
+          <h2 class="hd-lg max-w-[720px] mb-[40px] text-center lg:text-left">
             Everything You Need to Thrive Online
           </h2>
 
           <div class="our-services-sec-area">
             <div class="services-item">
               <div>
-                <h3 class="hd-md leading-[1.1] max-w-[316px] min-w-[316px]">
+                <h3 class="hd-md leading-[1.1]   max-w-[316px] min-w-[316px]">
                   Website Design & Development
                 </h3>
               </div>
               <div>
-                <h5 class="hd-sm leading-[1.1] max-w-[211px]">
+                <h5 class="hd-sm leading-[1.1] mb-[20px] lg:mb-0 max-w-[211px]">
                   Websites That Work — Beautifully
                 </h5>
               </div>
@@ -83,6 +83,7 @@ import TestimonialsSliderRtl from "../components/TestimonialsSliderRtl.jsx";
                   class="services-card-img"
                   alt="services-card-01"
                   layout="constrained"
+                  class=""
                 />
               </div>
               <div>
@@ -218,12 +219,12 @@ import TestimonialsSliderRtl from "../components/TestimonialsSliderRtl.jsx";
     <section class="our-work-sec pb-[100px]">
       <div class="container">
         <div class="our-work-content">
-          <div class="effect-wrapper relative max-w-[210px]">
+          <div class="effect-wrapper relative max-w-[210px] mx-auto lg:mx-0">
             <h2 class="tag max-w-[210px] text-center mb-[40px]">Portfolio</h2>
             <img src="/src/assets/images/light-sm.png" alt="our-services-effect" class="effect-img top-[-55px]">
           </div>
-          <div class="flex items-end justify-between mb-[40px]">
-            <h3 class="hd-lg leading-[1.1] max-w-[700px]">
+          <div class="flex flex-col lg:flex-row text-center lg:text-left items-end justify-between mb-[40px]">
+            <h3 class="hd-lg leading-[1.1] max-w-[700px] mb-[20px] lg:mb-0">
               Websites That Speak Louder Than Words
             </h3>
             <p class="text-[#676767] text-[20px] max-w-[400px]">
@@ -231,7 +232,7 @@ import TestimonialsSliderRtl from "../components/TestimonialsSliderRtl.jsx";
               solve real business problems and deliver measurable results.
             </p>
           </div>
-          <div class="grid grid-cols-2 gap-x-[20px] gap-y-[40px]">
+          <div class="grid grid-cols-1 md:grid-cols-2  gap-x-[20px] gap-y-[40px]">
             <div>
               <div class="portfolio-card">
                 <div class="portfolio-card-img">
@@ -324,7 +325,7 @@ import TestimonialsSliderRtl from "../components/TestimonialsSliderRtl.jsx";
             </div>
             <div>
               <div
-                class="bg-[#121212] flex justify-center flex-col items-center h-full rounded-[20px]"
+                class="bg-[#121212] p-[30px] lg:p-0 flex justify-center flex-col items-center h-full rounded-[20px]"
               >
                 <div
                   class="arrow-btn-wrapper w-[100px] h-[100px] rounded-[50%] mb-[20px] bg-[#2C2C2C] flex justify-center items-center"
@@ -335,7 +336,7 @@ import TestimonialsSliderRtl from "../components/TestimonialsSliderRtl.jsx";
                     <i class="fa-solid fa-arrow-right"></i>
                   </span>
                 </div>
-                <h4 class="text-white text-[50px] font-bold">
+                <h4 class="text-white text-[30px] md:text-[50px] font-bold">
                   View All Portfolio
                 </h4>
               </div>
@@ -356,7 +357,7 @@ import TestimonialsSliderRtl from "../components/TestimonialsSliderRtl.jsx";
           </h3>
         </div>
         <TestimonialsSlider client:load />
-        <TestimonialsSliderRtl client:load />
+        <!-- <TestimonialsSliderRtl client:load /> -->
       </div>
     </section>
     <section class="how-we-work pb-[100px]">
@@ -368,7 +369,7 @@ import TestimonialsSliderRtl from "../components/TestimonialsSliderRtl.jsx";
           </div>
           <h3 class="hd-lg leading-[1.1]">Our Proven 4-Step Process</h3>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-[40px]">
           <div class="hww-card">
             <div class="hww-circle mb-[20px]">
               <Image
@@ -461,7 +462,7 @@ import TestimonialsSliderRtl from "../components/TestimonialsSliderRtl.jsx";
             <h2 class="tag max-w-[220px] text-center mb-[30px]">Contact</h2>
             <img src="/src/assets/images/light-sm.png" alt="our-services-effect" class="effect-img top-[-54px]">
           </div>
-          <h3 class="hd-lg leading-[1.1] mb-[30px]">
+          <h3 class="hd-lg leading-[1.1] mb-[30px] text-center lg:text-left">
             Ready to Build Something Amazing?
           </h3>
           <p class="text-white text-[20px] text-center">
@@ -470,7 +471,7 @@ import TestimonialsSliderRtl from "../components/TestimonialsSliderRtl.jsx";
         </div>
         <form action="">
           <div
-            class="grid grid-cols-1 md:grid-cols-2 gap-x-[20px] gap-y-[20px]"
+            class="grid md:grid-cols-2 gap-x-[20px] gap-y-[20px]"
           >
             <div class="field-wrapper">
               <input
@@ -521,9 +522,9 @@ import TestimonialsSliderRtl from "../components/TestimonialsSliderRtl.jsx";
         </form>
       </div>
     </section>
-    <section class="faq-sec pt-[100px]">
+    <section class="faq-sec lg:pt-[100px]">
       <div class="container">
-        <div class="flex flex-col items-center justify-center mb-[70px]">
+        <div class="flex flex-col items-center justify-center lg:mb-[70px]">
           <div class="effect-wrapper relative max-w-[250px]">
             <h2 class="tag max-w-[220px] text-center mb-[30px]">FAQ'S</h2>
             <img src="/src/assets/images/light-sm.png" alt="our-services-effect" class="effect-img top-[-54px]">
